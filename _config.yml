@@ -1,0 +1,103 @@
+---
+booktitle: Proceedings of The 4th Conference on Lifelong Learning Agents
+shortname: CoLLAs
+volume: '330'
+year: '2025'
+start: &1 2025-08-11
+end: 2025-08-14
+published: 2026-04-06
+conference_number: '4'
+layout: proceedings
+series: Proceedings of Machine Learning Research
+publisher: PMLR
+issn: 2640-3498
+id: CoLLAs-2025
+month: 0
+cycles: false
+bibtex_editor: Chandar, Sarath and Pascanu, Razvan and Eaton, Eric and Liu, Bing and
+  Mahmood, Rupam and Rannen-Triki, Amal
+editor:
+- given: Sarath
+  family: Chandar
+- given: Razvan
+  family: Pascanu
+- given: Eric
+  family: Eaton
+- given: Bing
+  family: Liu
+- given: Rupam
+  family: Mahmood
+- given: Amal
+  family: Rannen-Triki
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of The 4th Conference on Lifelong Learning Agents
+    Held in University of Pennsylvania, Philadelphia, PA, USA on 11-14 August 2025
+
+  Published as Volume 330 by the Proceedings of Machine Learning Research on 06 April 2026.
+
+  Volume Edited by:
+    Sarath Chandar
+    Razvan Pascanu
+    Eric Eaton
+    Bing Liu
+    Rupam Mahmood
+    Amal Rannen-Triki
+
+  Series Editors:
+    Neil D. Lawrence
+date_str: 11--14 Aug
+url: https://proceedings.mlr.press
+author:
+  name: PMLR
+baseurl: "/v330"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+exclude:
+- README.md
+- Gemfile
+- ".gitignore"
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: mlresearch/jekyll-theme
+style: pmlr
+permalink: "/:title.html"
+ghub:
+  edit: true
+  repository: v330
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+volume_type: Volume
+volume_dir: v330
+email: ''
+conference:
+  name: Conference on Lifelong Learning Agents
+  url: https://lifelong-ml.cc/
+  location: University of Pennsylvania, Philadelphia, PA, USA
+  dates:
+  - *1
+  - 2025-08-12
+  - 2025-08-13
+  - 2025-08-14
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+link_visibility:
+  openreview: true
+  pdf: true
+  supplementary: true
+  software: true
+  video: true
+  arxiv: true
+  doi: true
+  website: true
+orig_bibfile: Collas2025_clean.bib
+# Site settings
+# Original source:  Collas2025_clean.bib
