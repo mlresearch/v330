@@ -1,0 +1,391 @@
+
+@Proceedings{CoLLAs-2025,
+    booktitle = {Proceedings of The 4th Conference on Lifelong Learning Agents},
+    name = {Conference on Lifelong Learning Agents},
+    shortname = {CoLLAs},
+    editor = {Chandar, Sarath and Pascanu, Razvan and Eaton, Eric and Liu, Bing and Mahmood, Rupam and Rannen-Triki, Amal},
+    volume = {330},
+    year = {2025},
+    start = {2025-08-11},
+    end = {2025-08-14},
+    published = {},
+    conference_url = {https://lifelong-ml.cc/},
+    conference_number = {4},
+    address = {University of Pennsylvania, Philadelphia, PA, USA}
+}
+
+
+@InProceedings{marouf25,
+    title = {Enhancing Plasticity for First Session Adaptation Continual Learning},
+    author = {MAROUF, Imad Eddine and Roy, Subhankar and Lathuilière, Stéphane and Tartaglione, Enzo},
+    abstract = {The integration of large pre-trained models (PTMs) into Class-Incremental Learning (CIL) has fa-
+cilitated the development of computationally efficient strategies such as First-Session Adaptation
+(FSA), which fine-tunes the model solely on the first task while keeping it frozen for subsequent
+tasks. Although effective in homogeneous task sequences, these approaches struggle when faced
+with the heterogeneity of real-world task distributions. We introduce Plasticity-Enhanced Test-Time
+Adaptation in Class-Incremental Learning (PLASTIC), a method that reinstates plasticity in CIL
+while preserving model stability. PLASTIC leverages Test-Time Adaptation (TTA) by dynamically
+fine-tuning LayerNorm parameters on unlabeled test data, enabling adaptability to evolving tasks
+and improving robustness against data corruption. To prevent TTA-induced model divergence and
+maintain stable learning across tasks, we introduce a teacher-student distillation framework, ensur-
+ing that adaptation remains controlled and generalizable. Extensive experiments across multiple
+benchmarks demonstrate that PLASTIC consistently outperforms both conventional and state-of-
+the-art PTM-based CIL approaches, while also exhibiting inherent robustness to data corruptions.
+Code is available at: https://github.com/IemProg/PLASTIC},
+    year = {2025},
+    pages = {1-14},
+}
+
+@InProceedings{mahdaviyeh25,
+    title = {Replay can provably increase forgetting},
+    author = {Mahdaviyeh, Yasaman and Lucas, James and Ren, Mengye and Tolias, Andreas S. and Zemel, Richard and Pitassi, Toniann},
+    abstract = {Continual learning seeks to enable machine learning systems to solve an increasing corpus of tasks sequentially. A critical challenge for continual learning is forgetting, where the performance on previously learned tasks decreases as new tasks are introduced. One of the commonly used techniques to mitigate forgetting, sample replay, has been shown empirically to reduce forgetting by retaining some examples from old tasks and including them in new training episodes.
+In this work, we provide a theoretical analysis of sample replay in an over-parameterized continual linear regression setting, where each task is given by a linear subspace and with enough replay samples, one would be able to eliminate forgetting. Our analysis focuses on sample replay
+and highlights the role of the replayed samples and the relationship between task subspaces.
+Surprisingly, we find that, even in a noiseless setting, forgetting can be non-monotonic with respect to the number of replay samples.
+We present tasks where replay can be *harmful* with respect to worst-case settings, and also in distributional settings where replay of randomly selected samples increases forgetting in expectation.
+We also give empirical evidence that harmful replay is not limited to training with linear models by showing similar behavior for a neural networks equipped with SGD. 
+Through experiments on a commonly used benchmark, we provide additional evidence that, even in seemingly benign scenarios, performance of the replay heavily depends on the choice of replay samples and the relationship between tasks.},
+    year = {2025},
+    pages = {15-42},
+}
+
+@InProceedings{jaziri25,
+    title = {Mitigating the Stability-Plasticity Dilemma in Adaptive Train Scheduling with Curriculum-Driven Continual DQN Expansion},
+    author = {Jaziri, Achref and Künzel, Étienne and Ramesh, Visvanathan},
+    abstract = {A continual learning agent builds on previous experiences to develop increasingly complex behaviors by adapting to non-stationary and dynamic environments while preserving previously acquired knowledge. However, scaling these systems presents significant challenges, particularly in balancing the preservation of previous policies with the adaptation of new ones to current environments. This balance, known as the stability-plasticity dilemma, is especially pronounced in complex multi-agent domains such as the train scheduling problem, where environmental and agent behaviors are constantly changing, and the search space is vast. In this work, we propose addressing these challenges in the train scheduling problem using curriculum learning. We design a curriculum with adjacent skills that build on each other to improve generalization performance. Introducing a curriculum with distinct tasks introduces non-stationarity, which we address by proposing a new algorithm: Continual Deep Q-Network (DQN) Expansion (CDE). Our approach dynamically generates and adjusts Q-function subspaces to handle environmental changes and task requirements. CDE mitigates catastrophic forgetting through EWC while ensuring high plasticity using adaptive rational activation functions. Experimental results demonstrate significant improvements in learning efficiency and adaptability compared to RL baselines and other adapted methods for continual learning, highlighting the potential of our method in managing the stability-plasticity dilemma in the adaptive train scheduling setting.},
+    year = {2025},
+    pages = {43-63},
+}
+
+@InProceedings{surdej25,
+    title = {Balancing Expressivity and Robustness: Constrained Rational Activations for Reinforcement Learning},
+    author = {Surdej, Rafał and Bortkiewicz, Michał and Lewandowski, Alex and Ostaszewski, Mateusz and Lyle, Clare},
+    abstract = {Trainable activation functions, whose parameters are optimized alongside network weights, offer increased expressivity compared to fixed activation functions. Specifically, trainable activation functions defined as ratios of polynomials (rational functions) have been proposed to enhance plasticity in reinforcement learning. However, their impact on training stability remains unclear. In this work, we study trainable rational activations in both reinforcement and continual learning settings. We find that while their flexibility enhances adaptability, it can also introduce instability, leading to overestimation in RL and feature collapse in longer continual learning scenarios. Our main result is demonstrating a trade-off between expressivity and plasticity in rational activations. To address this, we propose a constrained variant that structurally limits excessive output scaling while preserving adaptability. Experiments across MetaWorld and DeepMind Control Suite (DMC) environments show that our approach improves training stability and performance. In continual learning benchmarks, including MNIST with reshuffled labels and Split CIFAR-100, we reveal how different constraints affect the balance between expressivity and long-term retention. While preliminary experiments in discrete action domains (e.g., Atari) did not show similar instability, this suggests that the trade-off is particularly relevant for continuous control. Together, our findings provide actionable design principles for robust and adaptable trainable activations in dynamic, non-stationary environments. Code available at: https://github.com/special114/rl_rational_plasticity.},
+    year = {2025},
+    pages = {64-88},
+}
+
+@InProceedings{dong25,
+    title = {On the Hardness of Unsupervised Domain Adaptation: Optimal Learners and Information-Theoretic Perspective},
+    author = {Dong, Zhiyi and Liu, Zixuan and Mao, Yongyi},
+    abstract = {This paper studies the hardness of unsupervised domain adaptation (UDA) under covariate shift. We model the uncertainty that the learner faces by a distribution $\pi$ in the ground-truth triples $(p, q, f)$ —which we call a UDA class —where $(p, q)$ is the source-target distribution pair and $f$ is the classifier.  We define the performance of a learner as the overall target domain risk, averaged over the randomness of the ground-truth triple. This formulation couples the source distribution, the target distribution and the classifier in the ground truth, and deviates from the classical worst-case analyses, which pessimistically emphasize the impact of hard but rare UDA instances. In this formulation, we precisely characterize the optimal learner.  The performance of the optimal learner then allows us to define the learning difficulty for the UDA class and for the observed sample. To quantify this difficulty, we introduce an information-theoretic quantity —Posterior Target Label Uncertainty (PTLU) —along with its empirical estimate (EPTLU) from the sample , which capture the uncertainty in the prediction for the target domain. Briefly, PTLU is the entropy of the predicted label in the target domain under the posterior distribution of ground-truth classifier given the observed source and target samples.
+By proving that such a quantity serves to lower-bound the risk of any learner, we suggest that these quantities can be used as proxies for evaluating the hardness of UDA learning. We provide several examples to demonstrate the advantage of PTLU, relative to the existing measures, in evaluating the difficulty of UDA learning.},
+    year = {2025},
+    pages = {89-111},
+}
+
+@InProceedings{farrahi25,
+    title = {Learning Without Time-Based Embodiment Resets in Soft-Actor Critic},
+    author = {Farrahi, Homayoon and Mahmood, A. Rupam},
+    abstract = {When creating new continuous-control reinforcement learning tasks, practitioners often accelerate the learning process by incorporating into the task several accessory components, such as breaking the environment interaction into independent episodes and frequently resetting the environment.
+Although they can enable the learning of complex intelligent behaviors, such task accessories can result in unnatural task setups and hinder long-term performance in the real world.
+In this work, we explore the challenges of learning without episode terminations and robot embodiment resets using the Soft Actor-Critic (SAC) algorithm.
+To learn without terminations, we present a continuing version of the SAC algorithm and show that, with simple modifications to the reward functions of existing tasks, continuing SAC can perform as well as or better than episodic SAC while reducing the sensitivity of performance to the value of the discount rate $\gamma$.
+On a modified Gym Reacher task, we investigate possible explanations for the failure of continuing SAC when learning without embodiment resets.
+Our results suggest that a slowly-changing action-value function can lead to poor exploration of the state space in the SAC algorithm, resulting in failure of or significantly slower learning without embodiment resets.
+Finally, we compare several interventions for improving exploration and recovering the lost performance when learning without embodiment resets and validate the best-performing interventions on additional simulated tasks and a real-robot vision task.},
+    year = {2025},
+    pages = {112-135},
+}
+
+@InProceedings{piccoli25,
+    title = {Combining Pre-Trained Models for Enhanced Feature Representation in Reinforcement Learning},
+    author = {Piccoli, Elia and Li, Malio and Carfi', Giacomo and Lomonaco, Vincenzo and Bacciu, Davide},
+    abstract = {The recent focus and release of pre-trained models have been a key components to several advancements in many fields (e.g. Natural Language Processing and Computer Vision), as a matter of fact, pre-trained models learn disparate latent embeddings sharing insightful representations. On the other hand, Reinforcement Learning (RL) focuses on maximizing the cumulative reward obtained via agent's interaction with the environment. RL agents do not have any prior knowledge about the world, and they either learn from scratch an end-to-end mapping between the observation and action spaces or, in more recent works, are paired with monolithic and computationally expensive Foundational Models. How to effectively combine and leverage the hidden information of different pre-trained models simultaneously in RL is still an open and understudied question. In this work, we propose Weight Sharing Attention (WSA), a new architecture to combine embeddings of multiple pre-trained models to shape an enriched state representation, balancing the tradeoff between efficiency and performance. We run an extensive comparison between several combination modes showing that WSA obtains comparable performance on multiple Atari games compared to end-to-end models. Furthermore, we study the generalization capabilities of this approach and analyze how scaling the number of models influences agents' performance during and after training.},
+    year = {2025},
+    pages = {136-161},
+}
+
+@InProceedings{pawlak25,
+    title = {Addressing the Devastating Effects of Single-Task Data Poisoning in Exemplar-free Continual Learning},
+    author = {Pawlak, Stanisław and Twardowski, Bartłomiej and Trzcinski, Tomasz and Weijer, Joost van de},
+    abstract = {Our research addresses the overlooked security concerns related to data poisoning in continual learning (CL). Data poisoning – the intentional manipulation of training data to affect the predictions of machine learning models – was recently shown to be a threat to CL training stability. While existing literature predominantly addresses scenario-dependent attacks, we propose to focus on a more simple and realistic single-task poison (STP) threats. In contrast to previously proposed poisoning settings, in STP adversaries lack knowledge and access to the model, as well as to both previous and future tasks. During an attack, they only have access to the current task within the data stream. Our study demonstrates that even within these stringent conditions, adversaries can compromise model performance using standard image corruptions. We show that STP attacks are able to strongly disrupt the whole continual training process: decreasing both the stability (its performance on past tasks) and plasticity (capacity to adapt to new tasks) of the algorithm. Finally, we propose a high-level defense framework for CL along with a poison task detection method based on task vectors.},
+    year = {2025},
+    pages = {162-181},
+}
+
+@InProceedings{yang25,
+    title = {Memory Storyboard: Leveraging Temporal Segmentation for Streaming Self-Supervised Learning from Egocentric Videos},
+    author = {Yang, Yanlai and Ren, Mengye},
+    abstract = {Self-supervised learning holds the promise of learning good representations from real-world continuous uncurated data streams. However, most existing works in visual self-supervised learning focus on static images or artificial data streams. Towards exploring a more realistic learning substrate, we investigate streaming self-supervised learning from long-form real-world egocentric video streams. Inspired by the event segmentation mechanism in human perception and memory, we propose “Memory Storyboard,” a novel continual self-supervised learning framework that groups recent past frames into temporal segments for a more effective summarization of the past visual streams for memory replay. To accommodate efficient temporal segmentation, we propose a two-tier memory hierarchy: the recent past is stored in a short-term memory, where the storyboard temporal segments are produced and then transferred to a long-term memory. Experiments on two real-world egocentric video datasets show that contrastive learning objectives on top of storyboard frames result in semantically meaningful representations that outperform those produced by state-of-the-art unsupervised continual learning methods.},
+    year = {2025},
+    pages = {182-203},
+}
+
+@InProceedings{kirk25,
+    title = {Statistical Bias Leads to Overestimated OOD Generalization in Algorithmic Tasks for Seq2Seq Transformer Models},
+    author = {Kirk, John},
+    abstract = {This study aims to understand how statistical bias affects the model’s ability to generalize to in-distribution and out-of-distribution data on algorithmic tasks. Prior research indicates that transformers may inadvertently learn to rely on these spurious correlations, leading to an overestimation of their generalization capabilities. To investigate this, we evaluated the seq2seq transformer models in several synthetic algorithmic tasks, systematically introducing and varying the presence of these biases. We also analyze how different architectural design choices of the transformer models affect their generalization. Our findings suggest that the presence of statistical biases can affect model
+performance in out-of-distribution data, leading to an overestimation of its generalization capabilities. The models rely heavily on these spurious correlations for inference, as indicated by their performance on tasks that include such biases.},
+    year = {2025},
+    pages = {204-221},
+}
+
+@InProceedings{malviya25,
+    title = {Manifold Metric: A Loss Landscape Approach for Predicting Model Performance},
+    author = {Malviya, Pranshu and Huang, Jerry and Baratin, Aristide and Fournier, Quentin and Chandar, Sarath},
+    abstract = {Determining the optimal  model for a given task often requires training multiple models from scratch,  which becomes impractical as dataset and model sizes grow. A more efficient alternative is to expand smaller pre-trained models, but this approach is underutilized due to a limited understanding of its impact on the training dynamics. Existing methods for quantifying this impact have notable limitations, including computation cost.  To address this, we introduce a new perspective based on the loss landscape, which has been shown to contain a manifold of linearly connected minima. Specifically, we propose a metric that estimates the size of this manifold to study the impact of model expansion.  Our experiments reveal a strong correlation between performance gains and our manifold metric, enabling more informed model comparison and offering a first step toward a geometry-driven approach for reliable model expansion. Notably, our metric outperforms other baselines, even when different types of expansion with equivalent number of parameters are applied to a model.},
+    year = {2025},
+    pages = {222-244},
+}
+
+@InProceedings{xu25,
+    title = {Extremely Simple Streaming Forest},
+    author = {Xu, Haoyin and Dey, Jayanta and Panda, Sambit and Vogelstein, Joshua T},
+    abstract = {Decision forests, including random forests and gradient boosting trees, remain the leading machine learning methods for many real-world data problems, especially on tabular data. However, most of the current implementations only operate in batch mode, and therefore cannot incrementally update when more data arrive. Several previous works developed streaming trees and ensembles to overcome this limitation. Nonetheless, we found that those state-of-the-art algorithms suffer from a number of drawbacks, including low accuracy on some problems and high memory usage on others. We therefore developed an extremely simple extension of decision trees: given new data, simply update existing trees by continuing to grow them, and replace some old trees with new ones to control the total number of trees. In a benchmark suite containing 72 classification problems (the OpenML-CC18 data suite), we illustrate that our approach, $\textit{Extremely Simple Streaming Forest}$ (XForest), does not suffer from either of the aforementioned limitations. On those datasets, we also demonstrate that our approach often performs as well as, and sometimes even better than, conventional batch decision forest algorithms. With a $\textit{zero-added-node}$ approach, XForest-Zero, we also further extend existing splits to new tasks, and this very efficient method only requires inference time. Thus, XForests establish a simple standard for streaming trees and forests that could readily be applied to many real-world problems.},
+    year = {2025},
+    pages = {245-260},
+}
+
+@InProceedings{lee25,
+    title = {Benchmarking Mobile Device Control Agents across Diverse Configurations},
+    author = {Lee, Juyong and Min, Taywon and An, Minyong and Hahm, Dongyoon and Lee, Haeone and Kim, Changyeon and Lee, Kimin},
+    abstract = {Mobile device control agents can largely enhance user interactions and productivity by automating daily tasks. However, despite growing interest in developing practical agents, the absence of a commonly adopted benchmark in this area makes it challenging to quantify scientific progress. In this work, we introduce B-MoCA: a novel benchmark with interactive environments for evaluating and developing mobile device control agents. To create a realistic benchmark, we develop B-MoCA based on the Android operating system and define 131 common daily tasks. Importantly, we incorporate a randomization feature that changes the configurations of mobile devices, including user interface layouts and language settings, to assess generalization performance. We benchmark diverse agents, including agents employing large language models (LLMs) or multi-modal LLMs as well as agents trained with imitation learning using human expert demonstrations. While these agents demonstrate proficiency in executing straightforward tasks, their poor performance on complex tasks highlights significant opportunities for future research to improve effectiveness. Our source code is publicly available at https://b-moca.github.io.},
+    year = {2025},
+    pages = {261-306},
+}
+
+@InProceedings{chen25,
+    title = {Adapt On-the-Go: Behavior Modulation for Single-Life Robot Deployment},
+    author = {Chen, Annie S and Chada, Govind and Smith, Laura and Sharma, Archit and Fu, Zipeng and Levine, Sergey and Finn, Chelsea},
+    abstract = {To succeed in the real world, robots must cope with situations that differ from those seen during training. We study the problem of adapting on-the-fly to such novel scenarios during deployment, by drawing upon a diverse repertoire of previously-learned behaviors. Our approach, Robust Autonomous Modulation (ROAM), introduces a mechanism based on the perceived value of pretrained behaviors to select and adapt pre-trained behaviors to the situation at hand. Crucially, this adaptation process all happens within a single episode at test time, without any human supervision. We provide theoretical analysis of our selection mechanism and demonstrate that ROAM enables a robot to adapt rapidly to changes in dynamics both in simulation and on a real Go1 quadruped, even successfully moving forward with roller skates on its feet. Our approach adapts over 2x as efficiently compared to existing methods when facing a variety of out-of-distribution situations during deployment by effectively choosing and adapting relevant behaviors on-the-fly.},
+    year = {2025},
+    pages = {307-323},
+}
+
+@InProceedings{goswami25,
+    title = {Query Drift Compensation: Enabling Compatibility in Continual Learning of Retrieval Embedding Models},
+    author = {Goswami, Dipam and Wang, Liying and Twardowski, Bartłomiej and Weijer, Joost van de},
+    abstract = {Text embedding models enable semantic search, powering several NLP applications like Retrieval Augmented Generation by efficient information retrieval (IR). However, text embedding models are commonly studied in scenarios where the training data is static, thus limiting its applications to dy- namic scenarios where new training data emerges over time. IR methods generally encode a huge corpus of documents to low-dimensional embeddings and store them in a database index. During re- trieval, a semantic search over the corpus is performed and the document whose embedding is most similar to the query embedding is returned. When updating an embedding model with new training data, using the already indexed corpus is suboptimal due to the non-compatibility issue, since the model which was used to obtain the embeddings of the corpus has changed. While re-indexing of old corpus documents using the updated model enables compatibility, it requires much higher com- putation and time. Thus, it is critical to study how the already indexed corpus can still be effectively used without the need of re-indexing. In this work, we establish a continual learning benchmark with large-scale datasets and continually train dense retrieval embedding models on query-document pairs from new datasets in each task and observe forgetting on old tasks due to significant drift of embed- dings. We employ embedding distillation on both query and document embeddings to maintain stability and propose a novel query drift compensation method during retrieval to project new model query embeddings to the old embedding space. This enables compatibility with previously indexed corpus embeddings extracted using the old model and thus reduces the forgetting. We show that the proposed method significantly improves performance without any re-indexing. Code is available at https://github.com/dipamgoswami/QDC.},
+    year = {2025},
+    pages = {324-340},
+}
+
+@InProceedings{legate25,
+    title = {Warming Up for Zeroth-Order Federated Pre-Training with Low Resource Clients},
+    author = {Legate, Gwen and Rish, Irina and Belilovsky, Eugene},
+    abstract = {Federated learning enables collaborative model training across numerous edge devices while preserving the privacy of their local  data; however, memory and communication constraints on these edge devices may preclude their participation in training.  We consider a setting in which a subset of edge devices are below a critical memory or communication threshold required to conduct model updates. Under typical federated optimization algorithms, these devices are excluded from training which renders their data inaccessible and increases system induced bias. We are inspired by MeZO, a zeroth-order method used for memory-efficient fine-tuning. The increased variance inherent to zeroth-order gradient approximations has relegated previous zeroth-order optimizers exclusively to the domain of fine tuning; a limitation that we seek to correct. We devise a federated memory-efficient zeroth-order optimizer, $\textbf{ZOWarmUp}$  that permits zeroth-order training from a random initialization. ZOWarmUp leverages differing client capabilities and careful variance reduction techniques to facilitate participation of under-represented, low-resource clients in model training. Like other federated zeroth-order methods, ZOWarmUp eliminates the need for edge devices to transmit their full gradients to the server and instead relies on only a small set of random seeds, rendering the up-link communication cost negligible. We present experiments using various datasets and model architectures to show that ZOWarmUp is a robust algorithm that can can be applied under a wide variety of circumstances. For systems with a high proportion of edge devices that would otherwise be excluded from training, this algorithm provides access to a greater volume and diversity of data, thus improving training outcomes.},
+    year = {2025},
+    pages = {341-357},
+}
+
+@InProceedings{kamath25,
+    title = {BOWL: A Deceptively Simple Open World Learner},
+    author = {Kamath, Roshni Ramanna and Mitchell, Rupert and Paul, Subarnaduti and Kersting, Kristian and Mundt, Martin},
+    abstract = {Traditional machine learning excels on static benchmarks, but the real world is dynamic and seldom as carefully curated as test sets. Practical applications may generally encounter undesired inputs, are required to deal with novel information, and need to ensure operation through their full lifetime - aspects where standard deep models struggle. These three elements may have been researched individually, but their practical conjunction, i.e., open world learning, is much less consolidated. In this paper, we posit that neural networks already contain a powerful catalyst to turn them into open world learners: the batch normalization layer. Leveraging its tracked statistics, we derive effective strategies to detect in- and out-of-distribution samples, select informative data points, and update the model continuously. This, in turn, allows us to demonstrate that existing batch-normalized models can be made more robust, less prone to forgetting over time, and be trained efficiently with less data.},
+    year = {2025},
+    pages = {358-375},
+}
+
+@InProceedings{schmied25,
+    title = {Retrieval-Augmented Decision Transformer: External Memory for In-context RL},
+    author = {Schmied, Thomas and Paischer, Fabian and Patil, Vihang Prakash and Hofmarcher, Markus and Pascanu, Razvan and Hochreiter, Sepp},
+    abstract = {In-context learning (ICL) is the ability of a model to learn a new task by observing a few exemplars within its context. 
+While prevalent in NLP, this capability has recently also been observed in Reinforcement Learning (RL) settings.
+Prior in-context RL methods, however, require entire episodes in the agent's context.
+Given that complex environments typically lead to
+long episodes with sparse rewards, these methods are constrained to environments with short episodes. 
+To address these challenges, we introduce Retrieval-Augmented Decision Transformer (RA-DT).
+RA-DT employs an external memory mechanism to store past experiences from which it retrieves only sub-trajectories relevant for the current situation.
+The retrieval component in RA-DT can be entirely domain-agnostic.
+We evaluate the capabilities of RA-DT on grid-world environments, robotics simulations, and procedurally-generated video games.
+On grid-worlds, RA-DT outperforms baselines while using only a fraction of their context length.
+Furthermore, we illuminate the limitations of current in-context RL methods on complex environments and discuss future directions. To facilitate future research, we release datasets for four of the considered environments},
+    year = {2025},
+    pages = {376-417},
+}
+
+@InProceedings{rohani25,
+    title = {Preserving Plasticity in Continual Learning with Adaptive Linearity Injection},
+    author = {Rohani, Seyed Roozbeh Razavi and Khajavi, Khashayar and Chung, Wesley and Chen, Mo and Vaswani, Sharan},
+    abstract = {Loss of plasticity in deep neural networks is the gradual reduction in a model’s capacity to incrementally learn and has been identified as a key obstacle to learning in non-stationary problem settings. Recent work has shown that deep linear networks tend to be resilient towards loss of plasticity. Motivated by this observation, we propose $\textbf{Ada}$ptive $\textbf{Lin}$earization ($\texttt{AdaLin}$), a general approach that dynamically adapts each neuron's activation function to mitigate plasticity loss.  Unlike prior methods that rely on regularization or periodic resets, $\texttt{AdaLin}$ equips every neuron with a learnable parameter and a gating mechanism that injects linearity into the activation function based on its gradient flow.
+This adaptive modulation ensures sufficient gradient signal and sustains continual learning without introducing additional hyperparameters or requiring explicit task boundaries. When used with conventional activation functions like ReLU and Tanh, we demonstrate that $\texttt{AdaLin}$ can significantly improve the performance on standard benchmarks, including Random Label and Permuted MNIST, Random Label and Shuffled CIFAR 10, and Class-Split CIFAR 100. Our findings show that a per-neuron PReLU, as recovered by $\texttt{AdaLin}$ with ReLU, is surprisingly effective in mitigating plasticity loss. We also perform a systematic set of ablations that show that neuron-level adaptation is crucial for good performance, and analyze a number of metrics in the network that might be correlated to loss of plasticity. Our code is publicly available at: https://github.com/RoozbehRazavi/AdaLin.git},
+    year = {2025},
+    pages = {418-444},
+}
+
+@InProceedings{harun25,
+    title = {A Good Start Matters: Enhancing Continual Learning with Data-Driven Weight Initialization},
+    author = {Harun, Md Yousuf and Kanan, Christopher},
+    abstract = {To adapt to real-world data streams, continual learning (CL) systems must rapidly learn new concepts while preserving and utilizing prior knowledge. When it comes to adding new information to continually-trained deep neural networks (DNNs), 
+classifier weights for newly encountered categories are typically initialized randomly, leading to high initial training loss (spikes) and instability. Consequently, achieving optimal convergence and accuracy requires prolonged training, increasing computational costs.
+Inspired by Neural Collapse (NC), we propose a weight initialization strategy to improve learning efficiency in CL. In DNNs trained with mean-squared-error, NC gives rise to a Least-Square (LS) classifier in the last layer, whose weights can be analytically derived from learned features. We leverage this LS formulation to initialize classifier weights in a data-driven manner, aligning them with the feature distribution rather than using random initialization. Our method mitigates initial loss spikes and accelerates adaptation to new tasks.
+We evaluate our approach in large-scale CL settings, demonstrating faster adaptation and improved CL performance.},
+    year = {2025},
+    pages = {445-464},
+}
+
+@InProceedings{abbes25,
+    title = {Revisiting Replay and Gradient Alignment for Continual Pre-Training of Large Language Models},
+    author = {Abbes, Istabrak and Subbaraj, Gopeshh and Riemer, Matthew and Islah, Nizar and Tabaru, Tsuguchika and Kingetsu, Hiroaki and Chandar, Sarath and Rish, Irina},
+    abstract = {Training large language models (LLMs) typically involves pretraining on massive corpora, only to restart the process entirely when new data becomes available. 
+A more efficient and resource-conserving approach would be continual pretraining, where models are updated with new data rather than retraining from scratch. However, the introduction of new data often causes distribution shifts, leading to performance degradation on previously learned tasks. 
+In this paper, we take a deeper look at two popular proposals for addressing this distribution shift within the continual learning literature: experience replay and gradient alignment. We consider continual pre-training of models within the Llama family of architectures at a large scale across languages with 100 billion tokens of training data in each language, finding that both replay and gradient alignment lead to more stable learning without forgetting. This conclusion holds both as we vary the model scale and as we vary the number and diversity of tasks. Moreover, we are the first to demonstrate the effectiveness of gradient alignment techniques in the context of LLM pretraining and propose an efficient implementation of meta-experience replay (MER) (Riemer et al., 2019) that imbues experience replay with the benefits of gradient alignment despite negligible compute and memory overhead. Our scaling analysis across model sizes and replay rates indicates that small rates of replaying old examples are definitely a more valuable use of compute than investing in model size, but that it is more compute efficient to scale the size of the model than invest in high rates of replaying old examples.},
+    year = {2025},
+    pages = {465-486},
+}
+
+@InProceedings{monte25a,
+    title = {Teach YOLO to Remember: A Self-Distillation Approach for Continual Object Detection},
+    author = {Monte, Riccardo De and Pezze, Davide Dalle and Susto, Gian Antonio},
+    abstract = {Real-time object detectors like YOLO achieve exceptional performance when trained on large datasets for multiple epochs. However, in real-world scenarios where data arrives incrementally, neural networks suffer from catastrophic forgetting, leading to a loss of previously learned knowledge. To address this, prior research has explored strategies for Class Incremental Learning (CIL) in Continual Learning for Object Detection (CLOD), with most approaches focusing on two-stage object detectors. However, existing work suggests that Learning without Forgetting (LwF) may be ineffective for one-stage anchor-free detectors like YOLO due to noisy regression outputs, which risk transferring corrupted knowledge.
+In this work, we introduce YOLO LwF, a self-distillation approach tailored for YOLO-based continual object detection. 
+We demonstrate that when coupled with a replay memory, YOLO LwF significantly mitigates forgetting. Compared to previous approaches, it achieves state-of-the-art performance, improving mAP by +2.1% and +2.9% on the VOC and COCO benchmarks, respectively.},
+    year = {2025},
+    pages = {487-499},
+}
+
+@InProceedings{nzoyem25,
+    title = {Reevaluating Meta-Learning Optimization Algorithms Through Contextual Self-Modulation},
+    author = {Nzoyem, Roussel Desmond and Barton, David A.W. and Deakin, Tom},
+    abstract = {Contextual Self-Modulation (CSM) (Nzoyem et al. 2025) is a potent regularization mechanism for Neural Context Flows (NCFs) which demonstrates powerful meta-learning on physical systems. However, CSM has limitations in its applicability across different modalities and in high-data regimes. In this work, we introduce two extensions: $i$CSM which expands CSM to infinite-dimensional variations by embedding the contexts into a function space, and StochasticNCF which improves scalability by providing a low-cost approximation of meta-gradient updates through a sampled set of nearest environments. These extensions are demonstrated through comprehensive experimentation on a range of tasks, including dynamical systems, computer vision challenges, and curve fitting problems. Additionally, we incorporate higher-order Taylor expansions via Taylor-Mode automatic differentiation, revealing that higher-order approximations do not necessarily enhance generalization. Finally, we demonstrate how CSM can be integrated into other meta-learning frameworks with FlashCAVIA, a computationally efficient extension of the CAVIA meta-learning framework (Zintgraf et al. 2019). Together, these contributions highlight the significant benefits of CSM and indicate that its strengths in meta-learning and out-of-distribution tasks are particularly well-suited to physical systems. Our open-source library, designed for modular integration of self-modulation into contextual meta-learning workflows, is available at https://anonymous.4open.science/r/contextual-self-mod.},
+    year = {2025},
+    pages = {500-524},
+}
+
+@InProceedings{li25,
+    title = {NoProp: Training Neural Networks without Back-propagation or Forward-propagation},
+    author = {Li, Qinyu and Teh, Yee Whye and Pascanu, Razvan},
+    abstract = {The canonical deep learning approach for learning requires computing a gradient term at each block by back-propagating the error signal from the output towards each learnable parameter. Given the stacked structure of neural networks, where each block builds on the representation of the block below, this approach leads to hierarchical representations. More abstract features live on the top blocks of the model, while features on lower blocks are expected to be less abstract. In contrast to this, we introduce a new learning method named NoProp, which does not rely on either forward or backwards propagation across the entire network. Instead, NoProp takes inspiration from diffusion and flow matching methods, where each block independently learns to denoise a noisy target using only local targets and back-propagation within the block. We believe this work takes a first step towards introducing a new family of learning methods that does not learn hierarchical representations -- at least not in the usual sense. NoProp needs to fix the representation at each block beforehand to a noised version of the target, learning a local denoising process that can then be exploited at inference. We demonstrate the effectiveness of our method on MNIST, CIFAR-10, and CIFAR-100 image classification benchmarks. Our results show that NoProp is a viable learning algorithm, is easy to use and computationally efficient. By departing from the traditional learning paradigm which requires back-propagating a global error signal, NoProp alters how credit assignment is done within the network, enabling more efficient distributed learning as well as potentially impacting other characteristics of the learning process.},
+    year = {2025},
+    pages = {525-544},
+}
+
+@InProceedings{monte25b,
+    title = {Replay Consolidation with Label Propagation for Continual Object Detection},
+    author = {Monte, Riccardo De and Pezze, Davide Dalle and Ceccon, Marina and Pasti, Francesco and Paissan, Francesco and Farella, Elisabetta and Susto, Gian Antonio and Bellotto, Nicola},
+    abstract = {Continual Learning (CL) aims to learn new data while remembering previously acquired knowledge.
+In contrast to CL for image classification, CL for Object Detection faces additional challenges such as the missing annotations problem.
+In this scenario, images from previous tasks may contain instances of unknown classes that could reappear as labeled in future tasks, leading to task interference in replay-based approaches.
+Consequently, most approaches in the literature have focused on distillation-based techniques, which are effective when there is a significant class overlap between tasks.
+In our work, we propose an alternative to distillation-based approaches with a novel approach called Replay Consolidation with Label Propagation for Object Detection (RCLPOD).
+RCLPOD enhances the replay memory by improving the quality of the stored samples through a technique that promotes class balance while also improving the quality of the ground truth associated with these samples through a technique called label propagation.
+RCLPOD outperforms existing techniques on well-established benchmarks such as VOC and COC.
+Moreover, our approach is developed to work with modern architectures like YOLOv8, making it suitable for dynamic, real-world applications such as autonomous driving and robotics, where continuous learning and resource efficiency are essential.},
+    year = {2025},
+    pages = {545-564},
+}
+
+@InProceedings{mussati25,
+    title = {Prediction-Oriented Subsampling from Data Streams},
+    author = {Mussati, Benedetta Lavinia and Smith, Freddie Bickford and Rainforth, Tom and Roberts, S},
+    abstract = {Data is often generated in streams, with new observations arriving over time. A key challenge for learning models from data streams is capturing relevant information while keeping computational costs manageable. We explore intelligent data subsampling for offline learning, and argue for an information-theoretic method centred on reducing uncertainty in downstream predictions of interest. Empirically, we demonstrate that this prediction-oriented approach performs better than a previously proposed information-theoretic technique on two widely studied problems. At the same time, we highlight that reliably achieving strong performance in practice requires careful model design.},
+    year = {2025},
+    pages = {565-580},
+}
+
+@InProceedings{singh25a,
+    title = {On Supernet Transfer Learning for Effective Task Adaptation},
+    author = {Singh, Prabhant and Vanschoren, Joaquin},
+    abstract = {Neural Architecture Search (NAS) methods have been shown to outperform hand-designed models and help to democratize AI. However, NAS methods often start from scratch with each new task, making them computationally expensive and limiting their applicability. Transfer learning is a practical alternative with the rise of ever-larger pretrained models. However, it is also bound to the architecture of the pretrained model, which inhibits proper adaptation of the architecture to different tasks, leading to suboptimal (and excessively large) models.
+We address both challenges at once by introducing a novel and practical method to \textit{transfer supernets}, which parameterize both weight and architecture priors, and efficiently finetune both to new tasks.
+This enables supernet transfer learning  as a replacement for traditional transfer learning that also finetunes model architectures to new tasks.
+Through extensive experiments across multiple image classification tasks, we demonstrate that supernet transfer learning does not only drastically speed up the discovery of optimal models (3 to 5 times faster on average), but will also find better models than running NAS from scratch. The added model flexibility also increases the robustness of transfer learning, yielding positive transfer to even very different target datasets, especially with multi-dataset pretraining.},
+    year = {2025},
+    pages = {581-597},
+}
+
+@InProceedings{koop25,
+    title = {Using Partition-Tree Weighting and MAML for Continual and Online Learning},
+    author = {Koop, Anna and Bowling, Michael and Johanson, Michael Bradley},
+    abstract = {Learning from experience requires adapting and responding to errors over time. However, gradient-
+based deep learning can fail dramatically in the continual, online setting. In this work, we address
+this shortcoming by combining two meta-learning methods: the purely online Partition Tree Weight-
+ing (PTW) mixture-of-experts algorithm, and a novel variant of the Model-Agnostic Meta-Learning
+(MAML) initialization-learning procedure. We demonstrate our approach, Replay-MAML PTW, in
+a piecewise stationary classification task in which the task distribution is unknown and the context
+changes are unobserved and random. We refer to this continual, online, task-agnostic setting as
+experiential learning. In this setting, Replay-MAML PTW matches and even outperforms an aug-
+mented learner that is allowed to train offline from the environment’s task distribution and is given
+explicit notification when the environment context changes. Replay-MAML PTW thus provides
+a base learner with the benefits of offline training, access to the true task distribution, and direct
+observation of context-switches, but requires only a O(log T ) increase in computation and memory.},
+    year = {2025},
+    pages = {598-611},
+}
+
+@InProceedings{rubavicius25,
+    title = {SECURE: Semantics-aware Embodied Conversation under Unawareness for Lifelong Robot Learning},
+    author = {Rubavicius, Rimvydas and Fagan, Peter David and Lascarides, Alex and Ramamoorthy, Subramanian},
+    abstract = {This paper addresses a challenging interactive task learning scenario we call rearrangement under unawareness: an agent must manipulate a rigid-body environment without knowing a key concept necessary for solving the task and must learn about it during deployment. For example, the user may ask to "put the two granny smith apples inside the basket", but the agent cannot correctly identify which objects in the environment are "granny smith" as the agent has not been exposed to such a concept before. We introduce SECURE, an interactive task learning policy designed to tackle such scenarios. The unique feature of SECURE is its ability to enable agents to engage in semantic analysis when processing embodied conversations and making decisions. Through embodied conversation, a SECURE agent adjusts its deficient domain model by engaging in dialogue to identify and learn about previously unforeseen possibilities. The SECURE agent learns from the user's embodied corrective feedback when mistakes are made and strategically engages in dialogue to uncover useful information about novel concepts relevant to the task. These capabilities enable the SECURE agent to generalize to new tasks with the acquired knowledge. We demonstrate in the simulated Blocksworld and the real-world apple manipulation environments that the SECURE agent, which solves such rearrangements under unawareness, is more data-efficient than agents that do not engage in embodied conversation or semantic analysis.},
+    year = {2025},
+    pages = {612-634},
+}
+
+@InProceedings{lyle25,
+    title = {What can grokking teach us about learning under non-stationarity?},
+    author = {Lyle, Clare and Sokar, Ghada and György, András and Pascanu, Razvan},
+    abstract = {In continual learning problems, it is often necessary to overwrite components of a neural network's learned representation in response to changes in the data stream; however, neural networks often exhibit \textit{primacy bias}, whereby early training data hinders the network's ability to generalize on later tasks. 
+While feature-learning dynamics of nonstationary learning problems are not well studied, the emergence of feature-learning dynamics is known to drive the phenomenon of \textit{grokking}, wherein neural networks initially memorize their training data and only later exhibit perfect generalization. {\color{blue}{This work conjectures that the same feature-learning dynamics which facilitate generalization in grokking also underlie the ability to overwrite previous \textit{learned} features as well, and methods which accelerate grokking by facilitating feature-learning dynamics are promising candidates for addressing primacy bias in non-stationary learning problems.} We then propose a straightforward method to induce feature-learning dynamics as needed throughout training by increasing the \textit{effective} learning rate, i.e. the ratio between parameter and update norms.
+We show that this approach both facilitates feature-learning and improves generalization in a variety of settings, including grokking, warm-starting neural network training, and reinforcement learning tasks.},
+    year = {2025},
+    pages = {635-656},
+}
+
+@InProceedings{yildirim25,
+    title = {Self-Regulated Neurogenesis for Online Data-Incremental Learning},
+    author = {Yildirim, Murat Onur and Yildirim, Elif Ceren Gok and Mocanu, Decebal Constantin and Vanschoren, Joaquin},
+    abstract = {Neural networks often struggle with catastrophic forgetting when learning sequences of tasks or data streams, unlike humans who can continuously learn and consolidate new concepts even in the absence of explicit cues. Online data-incremental learning seeks to emulate this capability by processing each sample only once, without having access to task or stream cues at any point in time since this is more realistic compared to offline setups, where all data from novel class(es) is assumed to be readily available. However, existing methods typically rely on storing the subsets of data in memory or expanding the initial model architecture, resulting in significant computational overhead. Drawing inspiration from ‘self-regulated neurogenesis’—brain's mechanism for creating specialized regions or circuits for distinct functions—we propose a novel approach SERENA which encodes each concept in a specialized network path called ‘concept cell’, integrated into a single over-parameterized network. Once a concept is learned, its corresponding concept cell is frozen, effectively preventing the forgetting of previously acquired information. Furthermore, we introduce two new continual learning scenarios that more closely reflect real-world conditions, characterized by gradually changing sample sizes. Experimental results show that our method not only establishes new state-of-the-art results across ten benchmarks but also remarkably surpasses offline supervised batch learning performance. The code is available at https://github.com/muratonuryildirim/serena.},
+    year = {2025},
+    pages = {657-671},
+}
+
+@InProceedings{singh25b,
+    title = {Beyond Cosine Decay: On the effectiveness of Infinite Learning Rate Schedule for Continual Pre-training},
+    author = {Singh, Vaibhav and Janson, Paul and Mehrbod, Paria and Ibrahim, Adam and Rish, Irina and Belilovsky, Eugene and Thérien, Benjamin},
+    abstract = {The ever-growing availability of unlabeled data presents both opportunities and challenges for training artificial intelligence systems. While self-supervised learning (SSL) has emerged as a powerful paradigm for extracting meaningful representations from vast amounts of unlabeled data, existing methods still struggle to adapt to the non-stationary, non-IID nature of real-world data streams without forgetting previously learned knowledge. Recent works have adopted a repeated cosine annealing schedule for large-scale continual pre-training; however, these schedules (1) inherently cause forgetting during the re-warming phase and (2) have not been systematically compared to existing continual SSL methods. In this work, we systematically compare the widely used cosine schedule with the recently proposed infinite learning rate schedule and empirically find the latter to be a more effective alternative. Our extensive empirical evaluation across diverse image and language datasets demonstrates that the infinite learning rate schedule consistently enhances continual pre-training performance compared to a repeated cosine decay without being restricted to a fixed iteration budget. For instance, in a small-scale MAE pre-training setup, it outperforms several strong baselines from the literature. We then scale up our experiments to larger MAE pre-training and autoregressive language model pre-training. Our results show that the infinite learning rate schedule remains effective at scale, surpassing repeated cosine decay for both MAE pre-training and zero-shot LM benchmarks.},
+    year = {2025},
+    pages = {672-695},
+}
+
+@InProceedings{muralidhara25,
+    title = {CLoRA: Parameter-Efficient Continual Learning with Low-Rank Adaptation},
+    author = {Muralidhara, Shishir and Stricker, Didier and Schuster, René},
+    abstract = {In the past, continual learning (CL) was mostly concerned with the problem of catastrophic forgetting in neural networks, that arises when incrementally learning a sequence of tasks. Current CL methods function within the confines of limited data access, without any restrictions imposed on computational resources. However, in real-world scenarios, the latter takes precedence as deployed systems are often computationally constrained. A major drawback of most CL methods is the need to retrain the entire model for each new task. The computational demands of retraining large models can be prohibitive, limiting the applicability of CL in environments with limited resources. Through CLoRA, we explore the applicability of Low-Rank Adaptation (LoRA), a parameter-efficient fine-tuning method for class-incremental semantic segmentation. CLoRA leverages a small set of parameters of the model and uses the same set for learning across all tasks. Results demonstrate the efficacy of CLoRA, achieving performance on par with and exceeding the baseline methods. We further evaluate CLoRA using NetScore, underscoring the need to factor in resource efficiency and evaluate CL methods beyond task performance. CLoRA significantly reduces the hardware requirements for training, making it well-suited for CL in resource-constrained environments after deployment.},
+    year = {2025},
+    pages = {696-712},
+}
+
+@InProceedings{friedman25,
+    title = {Data-dependent and Oracle Bounds on Forgetting in Continual Learning},
+    author = {Friedman, Lior and Meir, Ron},
+    abstract = {In continual learning, knowledge must be preserved and re-used between tasks, maintaining good transfer to future tasks and minimizing forgetting of previously learned ones. 
+While several practical algorithms have been devised for this setting, there have been few theoretical works aiming to quantify and bound the degree of Forgetting in general settings. For *exemplar-free* methods, we provide both data-dependent upper bounds that apply *regardless of model and algorithm choice*, and oracle bounds for Gibbs posteriors. 
+We derive an algorithm based on our bounds and demonstrate empirically that our approach yields tight and practical bounds on forgetting for several continual learning problems and algorithms.},
+    year = {2025},
+    pages = {713-735},
+}
+
+@InProceedings{srivastava25,
+    title = {Improving Multimodal Large Language Models Using Continual Learning},
+    author = {Srivastava, Shikhar and Harun, Md Yousuf and Shrestha, Robik Singh and Kanan, Christopher},
+    abstract = {Generative large language models (LLMs) exhibit impressive capabilities, which can be further augmented by integrating a pre-trained vision model into the original LLM to create a multimodal LLM (MLLM). However, this integration often significantly decreases performance on natural language understanding and generation tasks, compared to the original LLM. This study investigates this issue using the LLaVA MLLM, treating the integration as a continual learning problem. We evaluate five continual learning methods to mitigate forgetting and identify a technique that enhances visual understanding while minimizing linguistic performance loss. Our approach reduces linguistic performance degradation by up to 15\% over the LLaVA recipe, while maintaining high multimodal accuracy. We also demonstrate the robustness of our method through continual learning on a sequence of vision-language tasks, effectively preserving linguistic skills while acquiring new multimodal capabilities. Project webpage: https://shikhar-srivastava.github.io/cl-for-improving-mllms},
+    year = {2025},
+    pages = {736-755},
+}
+
+@InProceedings{cignoni25,
+    title = {CLA: Latent Alignment for Online Continual Self-Supervised Learning},
+    author = {Cignoni, Giacomo and Cossu, Andrea and Gomez-Villa, Alexandra and Weijer, Joost van de and Carta, Antonio},
+    abstract = {Self-supervised learning (SSL) is able to build latent representations that generalize well to unseen data. However, only a few SSL techniques exist for the online CL setting, where data arrives in small minibatches, the model must comply with a fixed computational budget, and task boundaries are absent. We introduce Continual Latent Alignment (CLA), a novel SSL strategy for Online CL that aligns the representations learned by the current model with past representations to mitigate forgetting. We found that our CLA is able to speed up the convergence of the training process in the online scenario, outperforming state-of-the-art approaches under the same computational budget. Surprisingly, we also discovered that using CLA as a pretraining protocol in the early stages of pretraining leads to a better final performance when compared to a full i.i.d. pretraining.},
+    year = {2025},
+    pages = {756-775},
+}
+
+@InProceedings{hernandez-garcia25,
+    title = {Reinitializing weights vs units for maintaining plasticity in neural networks},
+    author = {Hernandez-Garcia, J. Fernando and Dohare, Shibhansh and Luo, Jun and Sutton, Richard S.},
+    abstract = {Loss of plasticity is a phenomenon in which a neural network loses its ability to learn when trained for an extended time on non-stationary data.
+It is a crucial problem to overcome when designing systems that learn continually.
+An effective technique for preventing loss of plasticity is reinitializing parts of the network.
+In this paper, we compare two different reinitialization schemes: reinitializing units vs reinitializing weights.
+We propose a new algorithm, which we name \textit{selective weight reinitialization}, for reinitializing the least useful weights in a network. 
+We compare our algorithm to continual backpropagation and ReDo, two previously proposed algorithms that reinitialize units in the network.
+Through our experiments in continual supervised learning problems, we identify two settings when reinitializing weights is more effective at maintaining plasticity than reinitializing units: (1) when the network has a small number of units and (2) when the network includes layer normalization.
+Conversely, reinitializing weights and units are equally effective at maintaining plasticity when the network is of sufficient size and does not include layer normalization. 
+We found that reinitializing weights maintains plasticity in a wider variety of settings than reinitializing units.},
+    year = {2025},
+    pages = {776-806},
+}
+
