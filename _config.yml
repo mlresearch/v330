@@ -3,7 +3,7 @@ booktitle: Proceedings of The 4th Conference on Lifelong Learning Agents
 shortname: CoLLAs
 volume: '330'
 year: '2025'
-start: &1 2025-08-11
+start: 2025-08-11
 end: 2025-08-14
 published: 2026-04-06
 conference_number: '4'
@@ -82,7 +82,7 @@ conference:
   url: https://lifelong-ml.cc/
   location: University of Pennsylvania, Philadelphia, PA, USA
   dates:
-  - *1
+  - 2025-08-11
   - 2025-08-12
   - 2025-08-13
   - 2025-08-14
